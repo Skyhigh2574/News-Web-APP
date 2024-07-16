@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
+import {Card} from 'react-bootstrap'
 
-export class Newsitem extends Component {
+const Newsitem =(props) => {
 
-
-  render() {
-    let {title, description, imgurl, newsUrl, author, date} = this.props;
+    let {title, description, imgurl, newsUrl, author, date} =   props;
 
     return (
         
@@ -20,7 +19,7 @@ export class Newsitem extends Component {
             </div>
       </div>
     )
-  }
+  
 }
 
 export default Newsitem;
